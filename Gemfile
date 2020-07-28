@@ -18,6 +18,10 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 
+#Groupdate
+gem 'groupdate'
+#Chartkick
+gem "chartkick"
 #Bootstrap
 gem 'bootstrap', '~> 4.5.0'
 #jQuery
