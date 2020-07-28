@@ -2,18 +2,40 @@
     <div class="row">
         <div class="col-sm">
             <%= form_for @daily do |f| %>
-
-                <%= f.label :positives %>
+                <%= f.label "Positivos" %>
+                <%- if @daily.errors[:positives].any?  %>
+                    <div class="badge badge-pill badge-danger">
+                        <%= @daily.errors[:positives].first %>
+                    </div>
+                <% end %>
                 <%= f.number_field :positives, class:"form-control" %>
 
-                <%= f.label :deaths %>
+                <%= f.label "Muertes" %>
+                <%- if @daily.errors[:deaths].any?  %>
+                    <div class="badge badge-pill badge-danger">
+                        <%= @daily.errors[:deaths].first %>
+                    </div>
+                <% end %>
                 <%= f.number_field :deaths, class:"form-control" %>
 
-                <%= f.label :suspects %>
+                <%= f.label "Sospechosos" %>
+                <%- if @daily.errors[:suspects].any?  %>
+                    <div class="badge badge-pill badge-danger">
+                        <%= @daily.errors[:suspects].first %>
+                    </div>
+                <% end %>
                 <%= f.number_field :suspects, class:"form-control" %>
                 
-                <%= f.label :negatives %>
+                <%= f.label "Negativos" %>
+                <%- if @daily.errors[:negatives].any?  %>
+                    <div class="badge badge-pill badge-danger">
+                        <%= @daily.errors[:negatives].first %>
+                    </div>
+                <% end %>
                 <%= f.number_field :negatives, class:"form-control" %>
+
+                <%= f.label "Fecha (Opcional)" %>
+                <%= f.datetime_local_field :created_at, class:"form-control" %>
 
                 <br>
                 <%= f.submit "Registrar nuevos datos", :class => "btn btn-primary" %>
