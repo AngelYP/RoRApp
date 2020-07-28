@@ -8,8 +8,11 @@ class DailiesController < ApplicationController
 
     def create
         @daily= Daily.new daily_params
-        @daily.save
-        redirect_to root_path
+        if @daily.save
+            return redirect_to root_path
+        end
+
+        render :new
     end
 
     def showData
@@ -44,7 +47,7 @@ class DailiesController < ApplicationController
     private
 
     def daily_params
-        params.require(:daily).permit(:positives, :negatives, :deaths, :suspects)
+        params.require(:daily).permit(:positives, :negatives, :deaths, :suspects, :created_at)
     end
 
     def set_daily
