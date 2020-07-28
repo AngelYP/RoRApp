@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Daily.create(
+    created_at:"2020-07-15 11:04:44 UTC",
     positives:1073,
     deaths:74,
     suspects:231,
@@ -14,6 +15,7 @@ Daily.create(
 )
 
 Daily.create(
+    created_at:"2020-07-16 11:04:44 UTC",
     positives:1099,
     deaths:77,
     suspects:238,
@@ -21,6 +23,7 @@ Daily.create(
 )
 
 Daily.create(
+    created_at:"2020-07-17 11:04:44 UTC",
     positives:1127,
     deaths:79,
     suspects:256,
@@ -28,6 +31,7 @@ Daily.create(
 )
 
 Daily.create(
+    created_at:"2020-07-18 11:04:44 UTC",
     positives:1154,
     deaths:82,
     suspects:272,
@@ -35,6 +39,7 @@ Daily.create(
 )
 
 Daily.create(
+    created_at:"2020-07-19 11:04:44 UTC",
     positives:1186,
     deaths:87,
     suspects:275,
@@ -42,6 +47,7 @@ Daily.create(
 )
 
 Daily.create(
+    created_at:"2020-07-20 11:04:44 UTC",
     positives:1206,
     deaths:87,
     suspects:276,
@@ -49,6 +55,7 @@ Daily.create(
 )
 
 Daily.create(
+    created_at:"2020-07-21 11:04:44 UTC",
     positives:1225,
     deaths:88,
     suspects:281,
@@ -56,6 +63,7 @@ Daily.create(
 )
 
 Daily.create(
+    created_at:"2020-07-22 11:04:44 UTC",
     positives:1258,
     deaths:88,
     suspects:287,
@@ -63,6 +71,7 @@ Daily.create(
 )
 
 Daily.create(
+    created_at:"2020-07-23 11:04:44 UTC",
     positives:1296,
     deaths:88,
     suspects:291,
@@ -70,6 +79,7 @@ Daily.create(
 )
 
 Daily.create(
+    created_at:"2020-07-24 11:04:44 UTC",
     positives:1322,
     deaths:89,
     suspects:319,
@@ -77,6 +87,7 @@ Daily.create(
 )
 
 Daily.create(
+    created_at:"2020-07-25 11:04:44 UTC",
     positives:1325,
     deaths:90,
     suspects:433,
